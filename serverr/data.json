@@ -1,0 +1,22 @@
+{
+  "data":[
+  {"s.no":1,"name":"telangana"},
+  {"s.no":2,"state":"andhra"}
+
+
+],
+
+"data1":[
+  {"s.no":1,"name":"hydrabad", "stateid":11},
+  {"s.no":2,"name":"sycndhrabad", "stateid":11},
+  {"s.no":3,"name":"mumbai", "stateid":11},
+  {"s.no":4,"name":"karimnagar","stateid":11},
+  {"s.no":5,"name":"siddipet","stateid":12},
+  {"s.no":6,"name":"warngal","stateid":12},
+  {"s.no":7,"name":"hanmakonda","stateid":12},
+  {"s.no":8,"name":"mancherial","stateid":12}
+
+]
+}
+
+

@@ -1,0 +1,46 @@
+<!-- GETDATA
+<table class="table table-boarderd table-stripped">
+    <thead>
+      <tr>
+        <th scope="col">s.no</th>
+        <th scope="col">name</th>
+        <th scope="col">email</th>
+        <th scope="col">phone</th>
+      </tr>
+    </thead>
+    <tbody>
+    
+      <tr *ngFor="let row of data;let index=index">
+        <th scope="row">{{ index }}</th>
+        <td>{{row.name}}</td>
+        <td>{{row.email}}</td>
+        <td>{{row.phone}}</td>
+      </tr>
+    </tbody>
+  </table>
+ -->
+
+ <!-- task -->
+<div class="container">    
+  <form action="">
+  
+<app-input [lable_name]="lableData.name" (outputdata)="nameOutput($event);" ></app-input>
+<app-input [lable_name]="lableData.email" (outputdata)="emailOutput($event);"></app-input>
+<app-input [lable_name]="lableData.phone"  (outputdata)="phoneOutput($event);"></app-input>
+<app-select [lable_name]="lableData.state" (outputdata)="stateOutput($event);"  [selectdata]="data"></app-select>
+<app-select [lable_name]="lableData.city" (outputdata)="cityOutput($event);"[selectdata]="data1" ></app-select>
+
+<input type="button" class="btn btn-success" value="createAccount" (click)="createAccount();">
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+

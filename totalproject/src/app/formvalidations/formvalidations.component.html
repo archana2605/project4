@@ -1,0 +1,58 @@
+<div class="contaoiner">
+  <form action="">
+    1
+  <div class="form-group">
+<div class="col-3">name</div>
+<div class="col-8">
+<input type="text" class="form-control" name="test" [(ngModel)]="test" required #username="ngModel" minlength="4">
+
+<div class="alert alert-danger" *ngIf="username.invalid==true  && username.dirty==true">please enter name</div>
+</div>
+  </div>
+  <!--prestine--{{username.pristine}}--dirty {{username.dirty}} --valid{{username.vaLID}}--INVALID :{{}USERNAME.INVALID}
+    ERRORS{{USERNAME.ERRORS |JSON}}-->
+    2
+    <div class="form-group"></div>
+    <div class="col-3">Email</div>
+    <div class="col-4">
+    <input type="email" [class.is-invalid]="emailId.dirty && emailId.invalid" class="form-control" name="email"
+    [(ngModel)]="email" required #emailId="ngModel" pattern="[0-9@]{10}">
+    </div>
+
+<div class ="form-group">
+  <div class="col-3"></div>
+<div class="col-4">
+<input type="button" class="btn btn-success" name="test" value="create Account" [disabled]=
+'username.invalid'>
+</div>
+</div>
+3
+<div class="form-group"></div>
+<div class="col-3">phone</div>
+<div class="col-4">
+<input type="text" [class.is-invalid]="phone2.dirty && phone2.invalid" class="form-control" name="phone"
+[(ngModel)]="phone" required #phone2="ngModel" pattern="[0-9@]{10}">
+</div>
+
+
+<div class ="form-group">
+  <div class="col-3"></div>
+<div class="col-4">
+<input type="button" class="btn btn-success" name="test" value="create Account" [disabled]=
+'username.invalid'>
+</div>
+</div>
+4
+<div class="form-group"></div>
+<div class="col-4">address</div>
+<div class="col-4">
+<input type="text" [class.is-invalid]="ammu.dirty && ammu.invalid" class="form-control" name="ammu1"
+  
+[(ngModel)]="ammu1" required #ammu="ngModel" pattren="[0-5@]{6}">
+
+</div>
+</form>
+</div>
+
+
+

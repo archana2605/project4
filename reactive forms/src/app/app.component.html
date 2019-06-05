@@ -1,0 +1,60 @@
+ 
+ <!--formcontrol
+    Enter Name:<input type="text" name="names"  [formControl]="name">
+<br>
+Enter Email:<input type="text" name="names" [formControl]="Email"> 
+<br>-->
+
+REACTIVE FORMS 
+<!-- form group
+<form action="" name="fm" [formGroup]="inputgroup">
+Enter Name:<input type="text" name="name" formControlName="name">
+<br>
+Enter Email:<input type="text" name="Email" formControlName="Email">
+<br>
+<input type="button" value="submit" (click)="sendData();">
+</form> --> 
+
+//VALIDATIONS
+
+
+<div class="container">
+<div class="row">
+<div class="form-group">
+<form action="" class="example-form" [formGroup]="logindata">
+user name:
+<input
+type="text"
+class="form-control"
+placeholder="Enter username"
+name="username" formControlName="username" [ngClass]="{'is-invalid' :logindata.get('username').dirty && logindata.get('username').invalid}" 
+minlength="5" maxlength="8"
+/>
+<div *ngIf="logindata.get('username').dirty  && logindata.get('username').invalid" class="invalid-feedback">
+    please enter username
+</div>
+
+Password:
+<input
+type="text"
+class="form-control"
+placeholder="Enter Password"
+name="Password" formControlName="Password" [ngClass]="{'is-invalid' :logindata.get('Password').dirty && logindata.get('Password').invalid}" 
+minlength="5" maxlength="8"
+/>
+<div *ngIf="logindata.get('Password').dirty  && logindata.get('Password').invalid" class="invalid-feedback">
+    please enter Password
+</div>
+
+
+</form>
+<input type="button" value="submit" (click)="logindata();">
+
+        </div>
+
+
+    </div>
+</div>
+
+
+

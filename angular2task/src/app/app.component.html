@@ -1,0 +1,24 @@
+
+<div class="container">    
+  <form action="">
+  
+<app-input [lable_name]="lableData.name" (outputdata)="nameOutput($event);" ></app-input>
+<app-input [lable_name]="lableData.email" (outputdata)="emailOutput($event);"></app-input>
+<app-input [lable_name]="lableData.phone"  (outputdata)="phoneOutput($event);"></app-input>
+<app-select [lable_name]="lableData.state" (outputdata)="stateOutput($event);"  [selectdata]="data"></app-select>
+<app-select [lable_name]="lableData.city" (outputdata)="cityOutput($event);"[selectdata]="data1" ></app-select>
+
+<input type="button" class="btn btn-success" value="createAccount" (click)="createAccount();">
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+

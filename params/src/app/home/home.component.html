@@ -1,0 +1,21 @@
+{{data |json}}
+
+<table class="table table-bordered">
+  <tr>
+  <th>S NO</th>
+  <th>Name</th>
+  <th>email</th>
+  <th>phone</th>
+  </tr>
+  <tr *ngFor="let a of data">
+   <td>{{a.id}}</td>  
+   <td>{{a.name}}</td>
+   <td>{{a.email}}</td>
+   <td>{{a.phone}}</td>
+  <td>
+  <a routerLink="/view/{{a.email}}"  class="btn btn-danger">view</a>
+  </td>
+  </tr>
+  </table>
+  <br>
+  {{name| phonehide}}

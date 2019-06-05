@@ -1,0 +1,15 @@
+<div class="form-group">
+  
+
+    <div class="col-3">
+         {{lable_name}}</div>
+<div class="col-9">
+  
+<input type="text" class="form-control" (keyup)="datafromInput();" [(ngModel)]="input_value"  required #name="ngModel" minlength="4">
+<div class="alert alert-danger" *ngIf="name.invalid==true && name.dirty==true">please enter valid details</div>
+
+</div>
+
+    
+
+</div>

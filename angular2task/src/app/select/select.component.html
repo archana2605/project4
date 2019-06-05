@@ -1,0 +1,16 @@
+
+    <div class="form-group">
+  
+    <div class="col-3"> 
+      {{ lable_name}} 
+    </div>
+    <div class="col-9">
+      
+        <select name="" class="form-control" id="" (change)="datafromSelect()" [(ngModel)]="input_value">
+          <option *ngFor="let row of selectdata">{{ row.name}}</option>
+        
+      </select>
+
+    
+  </div>
+</div>

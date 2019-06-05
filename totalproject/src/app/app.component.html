@@ -1,0 +1,40 @@
+ <div class="container-fluid">
+     <div class="row">
+<div class="col-12 ">
+    <img src="assets/image2.jpg" class="abc" alt="" srcset="">
+
+  <ul class="nav  ">
+        <li class="nav-item ">
+          <a class="nav-link text-white " routerLink="formsss" >formsss</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link text-white" routerLink="http" >http</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="binding">binding</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-white" routerLink="directives">directives</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " routerLink="pipes">pipes</a>
+        </li>
+      </ul>
+ </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <!-- INPUT -->
+    <!-- <app-component2ndlevel [archana]="data" [headding]="arc"  ></app-component2ndlevel>
+    <app-component2ndlevel [anusha]="data2" ></app-component2ndlevel> -->
+
+
+   <!-- OUTPUT  -->
+
+<app-form (rakesh)="abc($event)"></app-form> {{name}}
+  </div>
+<router-outlet></router-outlet>
+</div>
+</div>
+
+ 

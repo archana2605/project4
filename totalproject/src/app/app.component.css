@@ -1,0 +1,16 @@
+
+
+
+.abc{
+    position: relative;
+
+}
+.nav{
+    position: absolute;
+    top: 2%;
+    left:45%;
+}
+.abc{
+height:550px ;
+width:100%;
+}
